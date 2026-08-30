@@ -91,23 +91,32 @@
     </style>
 </head>
 <body>
+    <!-- SCHERMATA LOBBY (Visibile all'inizio) -->
+    <div id="lobbyArea" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; width: 100vw; background: #2c3e50; color: white; position: absolute; z-index: 100;">
+        <h1>🕹️ Coding Party Duel</h1>
+        <h2 id="lobby-status" style="color: #f1c40f;">Connessione al server in corso...</h2>
+        <div style="display: flex; gap: 20px; margin-top: 20px;">
+            <button id="btn-p1" onclick="scegliRuolo(1)" style="padding: 15px 30px; font-size: 18px; cursor: pointer; display: none;">Scegli Giocatore 1 🤖</button>
+            <button id="btn-p2" onclick="scegliRuolo(2)" style="padding: 15px 30px; font-size: 18px; cursor: pointer; display: none;">Scegli Giocatore 2 👾</button>
+        </div>
+    </div>
 
-    <div id="gameArea">
+    <!-- AREA DI GIOCO (Nascosta all'inizio) -->
+    <div id="gameArea" style="display: none;">
         <div id="maze-p1" class="maze-container">
-            <div class="maze-title">IL TUO ROBOT 🤖</div>
+            <div class="maze-title">GIOCATORE 1 🤖</div>
             <div id="avatar-p1" class="avatar">🤖</div>
         </div>
         <div id="maze-p2" class="maze-container">
-            <div class="maze-title">AVVERSARIO IN ATTESA 👾</div>
+            <div class="maze-title">GIOCATORE 2 👾</div>
             <div id="avatar-p2" class="avatar">👾</div>
         </div>
     </div>
 
-    <div id="blocklyContainer">
+    <div id="blocklyContainer" style="display: none;">
         <div id="blocklyDiv"></div>
         <button id="btn-invia" onclick="inviaCodice()">Inizia Corsa! 🏁</button>
     </div>
 
     <script src="app.js"></script>
-</body>
-</html>
+</body></html>
