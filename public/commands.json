@@ -1,0 +1,36 @@
+[
+    {
+        "id": "su",
+        "tipo": "movimento",
+        "testo": "SUUUUU",
+        "azione": "SU",
+        "colore": "#4C97FF"
+    },
+    {
+        "id": "giu",
+        "tipo": "movimento",
+        "testo": "GIUUUUU",
+        "azione": "GIU",
+        "colore": "#4C97FF"
+    },
+    {
+        "id": "sinistra",
+        "tipo": "movimento",
+        "testo": "SINISTRAAAA",
+        "azione": "SINISTRA",
+        "colore": "#4C97FF"
+    },
+    {
+        "id": "destra",
+        "tipo": "movimento",
+        "testo": "DESTRAAAA",
+        "azione": "DESTRA",
+        "colore": "#4C97FF"
+    },
+    {
+        "id": "ripeti",
+        "tipo": "ciclo",
+        "testo": "Ripeti %1 volte 🔄",
+        "colore": "#0FBD8C"
+    }
+]
